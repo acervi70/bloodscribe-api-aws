@@ -1,6 +1,7 @@
 package com.reigninbinary.bloodscribe.api.aws.lambda;
 
 import com.amazonaws.services.lambda.runtime.Context;
+import com.reigninbinary.cloud.aws.AwsCloudException;
 import com.reigninbinary.cloud.aws.lambda.LambdaProxyHandler;
 import com.reigninbinary.cloud.aws.lambda.LambdaProxyHandlerFactory;
 import com.reigninbinary.cloud.aws.lambda.LambdaProxyHandlerImpl;
@@ -17,11 +18,11 @@ public abstract class LambdaHandlerBase
 	}
 
 	@Override
-	public LambdaProxyHandler getHandler(LambdaProxyInput input) throws Exception {
+	public LambdaProxyHandler getHandler(LambdaProxyInput input) throws AwsCloudException, Exception {
 
 		return this;
 	}
 	
 	@Override
-	public abstract LambdaProxyOutput handleRequest(LambdaProxyInput lambdaProxyInput, Context context) throws Exception;
+	public abstract LambdaProxyOutput handleRequest(LambdaProxyInput lambdaProxyInput, Context context) throws AwsCloudException, Exception;
 }

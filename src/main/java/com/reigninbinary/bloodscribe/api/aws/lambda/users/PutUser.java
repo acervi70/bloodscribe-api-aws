@@ -8,6 +8,7 @@ import com.reigninbinary.bloodscribe.db.dto.User;
 import com.reigninbinary.cloud.aws.lambda.LambdaProxyInput;
 import com.reigninbinary.cloud.aws.lambda.LambdaProxyOutput;
 
+
 public class PutUser extends LambdaHandlerBase {
 
 	@Override
