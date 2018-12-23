@@ -73,5 +73,10 @@
 			<artifactId>bloodscribe-db-jdbc</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.reigninbinary</groupId>
+			<artifactId>bloodscribe-db-jpa</artifactId>
+			<version>1.0.0</version>
+		</dependency>
   </dependencies>
 </project>

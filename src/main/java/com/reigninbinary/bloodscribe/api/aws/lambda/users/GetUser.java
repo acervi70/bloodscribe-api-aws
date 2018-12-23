@@ -21,16 +21,4 @@ public class GetUser extends LambdaHandlerBase {
 		
 		return new LambdaProxyOutput(new Gson().toJson(user));
 	}
-	
-	public static void main(String[] args) {
-		
-		try {
-			User user = new UserApi().getUserById(2);
-			System.out.println(user.getEmailAddress());
-		} 
-		catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}		
-	}
 }
